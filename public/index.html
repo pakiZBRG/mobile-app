@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Alatsi|Josefin+Sans|Righteous|Montserrat&display=swap" rel="stylesheet">
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Mobile Store</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 110) {
+          $('.menu-wrap').css({"opacity":'1', "transition":'.5s'});
+        } else {
+          $('.menu-wrap').css({"opacity":'0', "transition":'.5s'});
+        }
+      });
+    </script>
+  </body>
+</html>
