@@ -13,12 +13,12 @@ class ProductList extends React.Component{
          <React.Fragment>
             <div className='py-5'>
                <h1 className='products text-center pb-5'>Products</h1>
-               <div class="menu-wrap">
-               <input type="checkbox" class="toggler"/>
-               <div class="hamburger">
+               <div className="menu-wrap">
+               <input type="checkbox" className="toggler"/>
+               <div className="hamburger">
                   <div></div>
                </div>
-               <div class="menu">
+               <div className="menu">
                   <div>
                      <div>
                         <Filter/>
